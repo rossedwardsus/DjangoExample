@@ -1,0 +1,16 @@
+{% extends "base.html" %}    
+
+{% block content %}
+<p>No polls are available1.</p>
+{{csrf_token}}
+
+<form action="/submitted" method="post">
+{% csrf_token %}
+<fieldset>
+    
+        <input name="choice" id="" value="{{ "choice.id" }}">
+</fieldset>
+<input type="submit" value="Vote">
+</form>
+
+{% endblock content %}
