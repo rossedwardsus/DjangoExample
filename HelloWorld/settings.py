@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -25,7 +24,7 @@ SECRET_KEY = 'django-insecure-r!!wfgtci&gk1bztv809w0pjok^lh-p73n6ec0s(dpxck2phas
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["10.0.0.116", "localhost"]
+ALLOWED_HOSTS = ["10.0.0.116", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -70,6 +69,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'HelloWorld.wsgi.application'
+
+#AUTH_USER_MODEL = 'App.CustomUser'
 
 
 # Database
